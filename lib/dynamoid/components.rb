@@ -22,8 +22,8 @@ module Dynamoid
     include ActiveModel::MassAssignmentSecurity if defined?(ActiveModel::MassAssignmentSecurity)
     include ActiveModel::Naming
     include ActiveModel::Observing if defined?(ActiveModel::Observing)
+    include ActiveModel::Serialization
     include ActiveModel::Serializers::JSON
-    include ActiveModel::Serializers::Xml
     include Dynamoid::Fields
     include Dynamoid::Indexes
     include Dynamoid::Persistence
